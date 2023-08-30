@@ -1,5 +1,5 @@
 <template>
-  <div class="flex pt-2 pb-2">
+  <div class="flex pt-2 pb-2 ">
     <strong>Filters:</strong>&nbsp;&nbsp;
     <label>
       <input type="checkbox" @click.stop="handleToggle" :checked="showDone" :disabled="!countDone" />

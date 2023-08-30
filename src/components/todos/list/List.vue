@@ -1,6 +1,6 @@
 <template>
-  <ol>
-    <Item v-for="todo in todos" :todo="todo" :key="todo.id" :toggleTodo="toggleTodo" />
+  <ol class="bg-gray-600"> 
+    <Item v-for="todo in todos" :todo="todo" :key="todo.id" :toggleTodo="toggleTodo" class="hover:bg-gray-700 cursor-pointer" />
   </ol>
   <div v-if="todos.length === 0" class="pt-8 text-lg text-gray-400">
     Your todo list is empty. Add something to the list...

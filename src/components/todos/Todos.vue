@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center  text-white">
     <div class="flex-col w-1/3">
       <Header :count="count" />
       <AddTodo :addTodo="addTodo" />

@@ -1,5 +1,5 @@
 <template>
-  <p class="leading-loose text-4xl text-indigo-700 font-black">
+  <p class="leading-loose text-4xl text-indigo-500 font-black">
     Todo list <span class="text-gray-400 font-light">({{ count }} <ItemsLabel :count="count" />)</span>
   </p>
 </template>

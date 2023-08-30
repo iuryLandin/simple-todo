@@ -1,8 +1,8 @@
 <template>
-  <li class="text-left text-lg shadow rounded w-full py-2 px-4 space-x-8">
+  <li class="text-left text-lg shadow rounded w-full py-2 px-4 space-x-8" :class="[todo.done ? 'bg-green-600 hover:bg-green-800' : '']">
     <label>
       <input type="checkbox" :checked="todo.done" @click.stop="toggleTodo(todo.id)" />
-      &nbsp; {{ todo.text }}
+       <span :class="[todo.done ? 'line-through ' : '', 'ml-3']"> {{ todo.text }}</span>
     </label>
   </li>
 </template>
